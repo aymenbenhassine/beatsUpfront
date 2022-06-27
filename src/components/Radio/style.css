@@ -1,0 +1,34 @@
+.rhap_container.player {
+  background-color: rgb(17, 22, 27);
+  display: flex;
+  justify-items: center;
+  padding: 0.25em 0.75em;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.rhap_stacked .rhap_controls-section {
+  margin-top: 0 !important;
+}
+
+.rhap_controls-section .rhap_volume-controls {
+  justify-content: center;
+}
+
+.rhap_controls-section .rhap_main-controls button[aria-label="Play"] svg path {
+  fill: rgb(235, 235, 235) !important;
+}
+
+.rhap_controls-section .rhap_main-controls button[aria-label="Pause"] svg path {
+  fill: #e36bae !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .stations {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  img {
+    display: none;
+  }
+}
